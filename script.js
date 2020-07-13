@@ -33,7 +33,7 @@ makeChart(
 				}
 			}
 			//xhttp.open("GET","https://project.ap-south-1.elasticbeanstalk.com"+"?"+"rangeVal="+rangeVal)
-			xhttp.open("GET","http://ec2-13-235-86-216.ap-south-1.compute.amazonaws.com:5000"+"?"+"&rangeVal="+rangeVal); 
+			xhttp.open("GET","https://ec2-13-235-86-216.ap-south-1.compute.amazonaws.com:5000"+"?"+"&rangeVal="+rangeVal); 
 			//xhttp.open("GET","http://localhost:5000"+"?"+"&rangeVal="+rangeVal); 
 			xhttp.send();
 		}
