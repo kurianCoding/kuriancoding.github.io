@@ -1,0 +1,9 @@
+.ct-label.ct-horizontal.ct-end{
+  transform:translate(-100%) rotate(-90deg);
+  position:relative;
+  justify-content: stretch;
+  text-align: justify;
+  transform-origin: -10% 0;
+  white-space:nowrap;
+  padding-bottom: 5px;
+}
