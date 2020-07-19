@@ -13,9 +13,10 @@ new Chartist.Line('.cl-chart', {
 }
 
 var rangeVal=5;
+
 makeChart(
 	['0000', '0001', '0002', '0003', '0004'],
-	[1, 3, 4, 5, 6]
+	[1, 3, 4, 5, 6],
 );
  function getValue(){
 			const self=this;
@@ -33,7 +34,8 @@ makeChart(
 				}
 			}
 			//xhttp.open("GET","https://project.ap-south-1.elasticbeanstalk.com"+"?"+"rangeVal="+rangeVal)
-			xhttp.open("GET","https://ec2-13-233-194-212.ap-south-1.compute.amazonaws.com:5000"+"?"+"&rangeVal="+rangeVal); 
+			//xhttp.open("GET","https://ec2-13-233-194-212.ap-south-1.compute.amazonaws.com:5000"+"?"+"&rangeVal="+rangeVal); 
+			xhttp.open("GET","https://herokuappkurian.herokuapp.com/"+"?"+"&rangeVal="+rangeVal); 
 			//xhttp.open("GET","http://localhost:5000"+"?"+"&rangeVal="+rangeVal); 
 			xhttp.send();
 		}
